@@ -205,7 +205,7 @@ class InstaManager:
 
         def connect(self, account_name, password):
                 """ Connect to an account in IS
-                Trying to connect to the account        
+                Trying to connect to the account
                 and add a new connection to the conecction pool
                 @params:
                         account_name   - Required  : description
@@ -272,8 +272,7 @@ class InstaManager:
                                 logging.info("{}:{}: user {}: blocked".format(str(datetime.now()), str(account_name), str(user['user_id'])))
                                 try:
                                         with open("data/" + BLOCKING_LOG_FILENAME, 'a') as f:
-                                                f.write(str(datetime.now()) +
-                                                        ":" + account_name + ":" + str(user) + "\n")
+                                                f.write(str(datetime.now()) + ":" + account_name + ":" + str(user) + "\n")
                                         f.close()
                                 except Exception:
                                         pass
