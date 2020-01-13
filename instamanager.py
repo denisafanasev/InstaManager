@@ -13,8 +13,9 @@ MAX_TIMEOUT = 20
 
 
 class InstaManager:
-        
-        _connections, _blocked_list = dict()
+
+        _connections = dict()
+        _blocked_list = dict()
 
         _blocked_control_list = []
         _blocked_control_list_filename = BLOCKED_USERS_CONTROL_LIST_FILENAME
